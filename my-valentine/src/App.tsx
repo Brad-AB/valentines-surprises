@@ -1,3 +1,4 @@
+import { Link } from 'lucide-react';
 import './App.css'
 import LightPillar from './components/LightPillar';
 import SplitText from "./components/SplitText";
@@ -16,13 +17,13 @@ style={{
     topColor="#ff00a2"
     bottomColor="#e407dd"
     intensity={1}
-    rotationSpeed={0.3}
+    rotationSpeed={0.5}
     glowAmount={0.002}
     pillarWidth={3}
     pillarHeight={0.4}
     noiseIntensity={0.5}
     pillarRotation={25}
-    interactive={true}
+    interactive={false}
     mixBlendMode="screen"
     quality="high"
     />
@@ -40,6 +41,9 @@ style={{
       rootMargin="-100px"
       textAlign="center"
       />
+        <button className= "mt-8 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors">
+           Will you be my valentine?
+        </button>
   </div>
 </div>
   )
