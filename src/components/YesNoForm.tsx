@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { Heart } from 'lucide-react';
-import LightPillar from './LightPillar';
 
 const YesNoForm: React.FC = () => {
   const [response, setResponse] = useState<string>('');
