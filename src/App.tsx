@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './App.css'
 import LightPillar from './components/LightPillar';
 import SplitText from "./components/SplitText";
+import { Heart } from 'lucide-react';
 
 function App() {
   const navigate = useNavigate();
@@ -43,11 +44,12 @@ style={{
       rootMargin="-100px"
       textAlign="center"
       />
-        <button 
-          className= "mt-8 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600"
+<button 
+          className="mt-8 px-8 py-4 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md flex items-center justify-center space-x-2"
           onClick={() => navigate('/surprise')}
         >
-           Will you be my valentine?
+          <Heart className="text-white" size={20} />
+          <span>Will you be my valentine?</span>
         </button>
   </div>
 </div>

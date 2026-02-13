@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { Heart } from 'lucide-react';
+import LightPillar from './LightPillar';
 
 const YesNoForm: React.FC = () => {
   const [response, setResponse] = useState<string>('');
@@ -37,12 +38,13 @@ const YesNoForm: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-rose-100 via-pink-100 to-red-100 p-8 animate-fade-in">
+     
       <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-10 max-w-md w-full text-center border border-pink-200">
         <div className="flex items-center justify-center mb-8">
           <Heart className="text-red-500 mr-3 animate-pulse" size={32} />
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent">
             Will you be my Valentine?
-          </h1>
+          </h2>
           <Heart className="text-red-500 ml-3 animate-pulse" size={32} />
         </div>
 
