@@ -26,7 +26,21 @@ style={{
     mixBlendMode="screen"
     quality="high"
     />
-    
+    <div className="flex flex-col items-center relative z-10">
+    <SplitText
+      text="Valentines Day"
+      className="text-6xl font-semibold text-center text-white font-serif"
+      delay={320}
+      duration={2}
+      ease="power3.out"
+      splitType="chars"
+      from={{ opacity: 0, y: 40 }}
+      to={{ opacity: 1, y: 0 }}
+      threshold={0.1}
+      rootMargin="-100px"
+      textAlign="center"
+      />
+  </div>
 </div>
   )
 }
