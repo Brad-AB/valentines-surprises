@@ -1,9 +1,11 @@
-import { Link } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 import LightPillar from './components/LightPillar';
 import SplitText from "./components/SplitText";
 
 function App() {
+  const navigate = useNavigate();
+  
   return (
 <div className="flex flex-col items-center justify-center min-h-screen"
 style={{ 
@@ -15,7 +17,7 @@ style={{
   }}>
   <LightPillar
     topColor="#ff00a2"
-    bottomColor="#e407dd"
+    bottomColor="#ff1ac6"
     intensity={1}
     rotationSpeed={0.5}
     glowAmount={0.002}
@@ -41,7 +43,10 @@ style={{
       rootMargin="-100px"
       textAlign="center"
       />
-        <button className= "mt-8 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors">
+        <button 
+          className= "mt-8 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600"
+          onClick={() => navigate('/surprise')}
+        >
            Will you be my valentine?
         </button>
   </div>
