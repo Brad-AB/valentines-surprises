@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { Heart } from 'lucide-react';
 
 const YesNoForm: React.FC = () => {
   const [response, setResponse] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (answer: string) => {
     setResponse(answer);
@@ -73,11 +74,12 @@ const YesNoForm: React.FC = () => {
           </div>
         )}
 
-        <Link to="/" className="mt-8 inline-block">
-          <button className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-md">
-            ← Back to Home
-          </button>
-        </Link>
+        <button 
+          className= "mt-8 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600"
+          onClick={() => navigate('/valentines-surprises')}
+        >
+           Return Home
+        </button>
       </div>
     </div>
   );
