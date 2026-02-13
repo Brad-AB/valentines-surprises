@@ -45,7 +45,7 @@ style={{
       textAlign="center"
       />
 <button 
-          className="mt-8 px-8 py-4 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md flex items-center justify-center space-x-2"
+          className="mt-8 px-8 py-4 bg-gradient-to-r from-pink-ff00a2 to-red-ff1ac6 hover:from-pink-ff00a2 hover:to-red-800 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md flex items-center justify-center space-x-2"
           onClick={() => navigate('/surprise')}
         >
           <Heart className="text-white" size={20} />
